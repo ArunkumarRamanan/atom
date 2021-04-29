@@ -1,0 +1,51 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: text-buffer
+    versions:
+    - 13.17.4
+  - dependency-name: semver
+    versions:
+    - 7.3.4
+  - dependency-name: mocha
+    versions:
+    - 8.2.1
+    - 8.3.0
+    - 8.3.1
+  - dependency-name: tree-sitter
+    versions:
+    - 0.17.1
+    - 0.18.0
+    - 0.18.1
+  - dependency-name: postcss-selector-parser
+    versions:
+    - 6.0.4
+  - dependency-name: chai
+    versions:
+    - 4.2.0
+    - 4.3.0
+    - 4.3.1
+    - 4.3.3
+  - dependency-name: jasmine-reporters
+    versions:
+    - 2.3.2
+  - dependency-name: postcss
+    versions:
+    - 8.2.10
+    - 8.2.12
+    - 8.2.4
+    - 8.2.5
+    - 8.2.6
+    - 8.2.7
+    - 8.2.8
+    - 8.2.9
+  - dependency-name: sinon
+    versions:
+    - 10.0.0
+    - 9.2.4
